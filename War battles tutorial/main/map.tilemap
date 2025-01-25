@@ -42895,7 +42895,7 @@ layers {
 }
 layers {
   id: "layer2"
-  z: 1.0
+  z: 0.1
   cell {
     x: -12
     y: -16
@@ -73031,7 +73031,7 @@ layers {
 }
 layers {
   id: "layer3"
-  z: 2.0
+  z: 0.2
   cell {
     x: 38
     y: -16
