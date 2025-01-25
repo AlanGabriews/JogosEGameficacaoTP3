@@ -16,11 +16,6 @@ embedded_instances {
   "  texture: \\\"/builtins/graphics/particle_blob.tilesource\\\"\\n"
   "}\\n"
   "\"\n"
-  "  scale {\n"
-  "    x: 0.952\n"
-  "    y: 0.952\n"
-  "    z: 0.952\n"
-  "  }\n"
   "}\n"
   ""
   position {
@@ -32,4 +27,27 @@ embedded_instances {
     y: 1.554368
     z: 1.554368
   }
+}
+embedded_instances {
+  id: "go1"
+  data: "components {\n"
+  "  id: \"PlayerTwo\"\n"
+  "  component: \"/main/PlayerTwo.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"anim\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/builtins/graphics/particle_blob.tilesource\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 100.0\n"
+  "    y: 100.0\n"
+  "  }\n"
+  "}\n"
+  ""
 }

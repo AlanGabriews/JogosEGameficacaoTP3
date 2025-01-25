@@ -15,6 +15,18 @@ key_trigger {
   action: "down"
 }
 key_trigger {
-  input: KEY_SPACE
-  action: ""
+  input: KEY_W
+  action: "w"
+}
+key_trigger {
+  input: KEY_A
+  action: "a"
+}
+key_trigger {
+  input: KEY_S
+  action: "s"
+}
+key_trigger {
+  input: KEY_D
+  action: "d"
 }
