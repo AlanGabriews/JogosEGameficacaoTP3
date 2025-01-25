@@ -1,8 +1,0 @@
-animations {
-  id: "player2"
-  images {
-    image: "/assets/teste/Pokeball.png"
-  }
-  playback: PLAYBACK_NONE
-}
-extrude_borders: 2

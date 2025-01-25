@@ -1,4 +1,29 @@
 name: "main"
+instances {
+  id: "Enemy"
+  prototype: "/main/Enemy.go"
+  position {
+    x: 91.0
+    y: 224.0
+  }
+  scale3 {
+    x: 1.272
+    y: 1.272
+    z: 1.272
+  }
+}
+instances {
+  id: "bullet"
+  prototype: "/main/bullet.go"
+  position {
+    x: 94.0
+    y: 126.0
+  }
+  rotation {
+    z: -0.7057985
+    w: 0.70841265
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "go"
