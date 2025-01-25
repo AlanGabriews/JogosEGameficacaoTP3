@@ -1,3 +1,7 @@
+components {
+  id: "rocket"
+  component: "/main/rocket.script"
+}
 embedded_components {
   id: "sprite"
   type: "sprite"
@@ -8,4 +12,9 @@ embedded_components {
   "  texture: \"/main/sprites.atlas\"\n"
   "}\n"
   ""
+  scale {
+    x: 3.0
+    y: 3.0
+    z: 3.0
+  }
 }

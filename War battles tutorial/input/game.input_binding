@@ -1,0 +1,40 @@
+key_trigger {
+  input: KEY_W
+  action: "up_P1"
+}
+key_trigger {
+  input: KEY_S
+  action: "down_P1"
+}
+key_trigger {
+  input: KEY_A
+  action: "left_P1"
+}
+key_trigger {
+  input: KEY_D
+  action: "right_P1"
+}
+key_trigger {
+  input: KEY_UP
+  action: "up_P2"
+}
+key_trigger {
+  input: KEY_DOWN
+  action: "down_P2"
+}
+key_trigger {
+  input: KEY_LEFT
+  action: "left_P2"
+}
+key_trigger {
+  input: KEY_RIGHT
+  action: "right_P2"
+}
+key_trigger {
+  input: KEY_SPACE
+  action: "attack_P1"
+}
+key_trigger {
+  input: KEY_ENTER
+  action: "attack_P2"
+}
