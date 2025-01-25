@@ -1,0 +1,28 @@
+animations {
+  id: "player2"
+  images {
+    image: "/assets/teste/Pokeball.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "Enemy"
+  images {
+    image: "/assets/teste/Pikachu.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "Bullet"
+  images {
+    image: "/assets/buildings/turret-rocket/1.png"
+  }
+  images {
+    image: "/assets/buildings/turret-rocket/2.png"
+  }
+  images {
+    image: "/assets/buildings/turret-rocket/3.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+}
+extrude_borders: 2

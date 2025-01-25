@@ -37,4 +37,35 @@ key_trigger {
 key_trigger {
   input: KEY_ENTER
   action: "attack_P2"
+=======
+  input: KEY_LEFT
+  action: "left"
+}
+key_trigger {
+  input: KEY_RIGHT
+  action: "right"
+}
+key_trigger {
+  input: KEY_UP
+  action: "up"
+}
+key_trigger {
+  input: KEY_DOWN
+  action: "down"
+}
+key_trigger {
+  input: KEY_W
+  action: "w"
+}
+key_trigger {
+  input: KEY_A
+  action: "a"
+}
+key_trigger {
+  input: KEY_S
+  action: "s"
+}
+key_trigger {
+  input: KEY_D
+  action: "d"
 }

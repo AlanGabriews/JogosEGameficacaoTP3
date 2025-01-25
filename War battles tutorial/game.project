@@ -9,9 +9,9 @@ main_collection = /main/main.collectionc
 game_binding = /input/game.input_bindingc
 
 [display]
-width = 1920
-height = 1080
-fullscreen = 0
+width = 1824
+height = 1104
+fullscreen = 1
 
 [physics]
 scale = 0.02
@@ -20,5 +20,5 @@ scale = 0.02
 shared_state = 1
 
 [tilemap]
-max_tile_count = 10000
+max_tile_count = 100000
 
