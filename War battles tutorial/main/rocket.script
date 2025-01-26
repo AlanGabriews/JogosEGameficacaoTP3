@@ -2,7 +2,7 @@ go.property("dir", vmath.vector3())                 -- [1]
 
 function init(self)
 	self.speed = 400                                -- [2]
-	self.life = 2
+	self.life = 3
 end
 
 -- Funcão criada para separar explosão provocada por

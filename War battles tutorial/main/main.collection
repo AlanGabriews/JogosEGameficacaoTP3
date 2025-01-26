@@ -1,81 +1,5 @@
 name: "main"
-instances {
-  id: "Enemy"
-  prototype: "/main/Enemy.go"
-  position {
-    x: 91.0
-    y: 224.0
-  }
-  scale3 {
-    x: 1.272
-    y: 1.272
-    z: 1.272
-  }
-}
-instances {
-  id: "bullet"
-  prototype: "/main/bullet.go"
-  position {
-    x: 94.0
-    y: 126.0
-  }
-  rotation {
-    z: -0.7057985
-    w: 0.70841265
-  }
-}
 scale_along_z: 0
-embedded_instances {
-  id: "go"
-  data: "components {\n"
-  "  id: \"playerOne\"\n"
-  "  component: \"/main/playerOne.script\"\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"anim\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "textures {\\n"
-  "  sampler: \\\"texture_sampler\\\"\\n"
-  "  texture: \\\"/builtins/graphics/particle_blob.tilesource\\\"\\n"
-  "}\\n"
-  "\"\n"
-  "}\n"
-  ""
-  position {
-    x: 10.0
-    y: 10.0
-  }
-  scale3 {
-    x: 1.554368
-    y: 1.554368
-    z: 1.554368
-  }
-}
-embedded_instances {
-  id: "go1"
-  data: "components {\n"
-  "  id: \"PlayerTwo\"\n"
-  "  component: \"/main/PlayerTwo.script\"\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"anim\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "textures {\\n"
-  "  sampler: \\\"texture_sampler\\\"\\n"
-  "  texture: \\\"/builtins/graphics/particle_blob.tilesource\\\"\\n"
-  "}\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 100.0\n"
-  "    y: 100.0\n"
-  "  }\n"
-  "}\n"
-  ""
-}
 embedded_instances {
   id: "map"
   data: "components {\n"
@@ -93,7 +17,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"tank-down\\\"\\n"
+  "  data: \"default_animation: \\\"tank-right\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "textures {\\n"
   "  sampler: \\\"texture_sampler\\\"\\n"
@@ -153,7 +77,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"tank-down\\\"\\n"
+  "  data: \"default_animation: \\\"tank-left\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "textures {\\n"
   "  sampler: \\\"texture_sampler\\\"\\n"
