@@ -6,6 +6,19 @@ embedded_instances {
   "  id: \"map\"\n"
   "  component: \"/main/map.tilemap\"\n"
   "}\n"
+  "embedded_components {\n"
+  "  id: \"collisionobject\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"collision_shape: \\\"/main/map.tilemap\\\"\\n"
+  "type: COLLISION_OBJECT_TYPE_DYNAMIC\\n"
+  "mass: 1.0E20\\n"
+  "friction: 0.1\\n"
+  "restitution: 0.5\\n"
+  "group: \\\"level\\\"\\n"
+  "mask: \\\"tank\\\"\\n"
+  "locked_rotation: true\\n"
+  "\"\n"
+  "}\n"
   ""
 }
 embedded_instances {
@@ -61,11 +74,38 @@ embedded_instances {
   "}\\n"
   "\"\n"
   "}\n"
+  "embedded_components {\n"
+  "  id: \"collisionobject1\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"type: COLLISION_OBJECT_TYPE_DYNAMIC\\n"
+  "mass: 1.0\\n"
+  "friction: 0.1\\n"
+  "restitution: 0.5\\n"
+  "group: \\\"tank\\\"\\n"
+  "mask: \\\"level\\\"\\n"
+  "embedded_collision_shape {\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 5.0\\n"
+  "      y: 4.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "    }\\n"
+  "    index: 0\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  data: 50.695305\\n"
+  "  data: 31.24616\\n"
+  "  data: 10.64768\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
   ""
   position {
     x: 150.0
     y: 500.0
-    z: 1.0
+    z: 0.2
   }
 }
 embedded_instances {
@@ -121,10 +161,37 @@ embedded_instances {
   "}\\n"
   "\"\n"
   "}\n"
+  "embedded_components {\n"
+  "  id: \"collisionobject1\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"type: COLLISION_OBJECT_TYPE_DYNAMIC\\n"
+  "mass: 1.0\\n"
+  "friction: 0.1\\n"
+  "restitution: 0.5\\n"
+  "group: \\\"tank\\\"\\n"
+  "mask: \\\"level\\\"\\n"
+  "embedded_collision_shape {\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 5.0\\n"
+  "      y: 4.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "    }\\n"
+  "    index: 0\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  data: 39.771515\\n"
+  "  data: 28.890942\\n"
+  "  data: 12.97143\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
   ""
   position {
     x: 1700.0
     y: 500.0
-    z: 1.0
+    z: 0.2
   }
 }
