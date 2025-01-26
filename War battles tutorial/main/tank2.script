@@ -6,7 +6,7 @@ function init(self)
 
 	self.input = vmath.vector3()
 	self.dir = vmath.vector3(0, 1, 0)
-	self.speed = 50
+	self.speed = 100
 end
 
 function final(self)                                -- [7]
