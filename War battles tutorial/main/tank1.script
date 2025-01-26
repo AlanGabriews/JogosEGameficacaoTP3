@@ -49,15 +49,29 @@ function on_message(self, message_id, message, sender)
 	-- Remove this function if not needed
 end
 
+
+-- Função para mudar a animação do tanque
+local function play_animation(self, animation)
+	if self.current_animation ~= animation then
+		self.current_animation = animation
+		-- Send message to this character's sprite to start animation
+		msg.post("#sprite", "play_animation", {id = animation})
+	end
+end
+
 function on_input(self, action_id, action)          -- [14]
 	if action_id == hash("up_P1") then
 		self.input.y = 1                            -- [15]
+		play_animation(self, hash("tank-up"))
 	elseif action_id == hash("down_P1") then
 		self.input.y = -1
+		play_animation(self, hash("tank-down"))
 	elseif action_id == hash("left_P1") then
 		self.input.x = -1
+		play_animation(self, hash("tank-left"))
 	elseif action_id == hash("right_P1") then
 		self.input.x = 1
+		play_animation(self, hash("tank-right"))
 	elseif action_id == hash("attack_P1") and action.pressed then
 		self.firing = true
 	end
