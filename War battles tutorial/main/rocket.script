@@ -31,6 +31,9 @@ function on_message(self, message_id, message, sender)      -- [1]
 		go.delete()                                         -- [3]
 	elseif message_id == hash("collision_response") then
 		explode(self)
-		go.delete(message.other_id)
+		if message.other_id ~= hash("/map") then
+			go.delete(message.other_id)
+			
+		end
 	end 
 end

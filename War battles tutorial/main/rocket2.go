@@ -27,6 +27,7 @@ embedded_components {
   "restitution: 0.5\n"
   "group: \"rocket2\"\n"
   "mask: \"tank1\"\n"
+  "mask: \"level\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"
