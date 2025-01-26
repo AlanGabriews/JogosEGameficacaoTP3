@@ -32,6 +32,7 @@ function on_message(self, message_id, message, sender)      -- [1]
 	elseif message_id == hash("collision_response") then
 		explode(self)
 		if message.other_id ~= hash("/map") then
+			msg.post(message.other_id, "tank_hit") --notifica colisão com tanque
 			go.delete(message.other_id)
 			
 		end

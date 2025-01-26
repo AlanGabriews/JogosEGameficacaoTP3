@@ -1,0 +1,139 @@
+script: "/main/final.gui_script"
+fonts {
+  name: "04font"
+  font: "/main/fonts/04font.font"
+}
+nodes {
+  position {
+    x: 543.0
+    y: 477.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.302
+    y: 0.502
+    z: 0.302
+  }
+  type: TYPE_BOX
+  id: "PlayAgain"
+  inherit_alpha: true
+  enabled: false
+  visible: false
+}
+nodes {
+  scale {
+    x: 0.5
+    y: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.8
+    y: 0.6
+    z: 0.2
+  }
+  type: TYPE_TEXT
+  text: "Play Again"
+  font: "04font"
+  id: "playAgainText"
+  parent: "PlayAgain"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  position {
+    y: -25.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.8
+    y: 0.6
+    z: 0.2
+  }
+  type: TYPE_TEXT
+  text: "Pressione P\n"
+  ""
+  font: "04font"
+  id: "P"
+  parent: "PlayAgain"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  position {
+    x: 1247.0
+    y: 477.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.902
+    y: 0.302
+    z: 0.302
+  }
+  type: TYPE_BOX
+  id: "Quit"
+  inherit_alpha: true
+}
+nodes {
+  scale {
+    x: 0.5
+    y: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.902
+    y: 0.702
+    z: 0.302
+  }
+  type: TYPE_TEXT
+  text: "Quit"
+  font: "04font"
+  id: "quitText"
+  parent: "Quit"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -25.0
+  }
+  scale {
+    x: 0.3
+    y: 0.3
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.8
+    y: 0.6
+    z: 0.2
+  }
+  type: TYPE_TEXT
+  text: "Pressione Q\n"
+  ""
+  font: "04font"
+  id: "Q"
+  parent: "Quit"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

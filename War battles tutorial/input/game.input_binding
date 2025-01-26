@@ -38,3 +38,11 @@ key_trigger {
   input: KEY_ENTER
   action: "attack_P2"
 }
+key_trigger {
+  input: KEY_Q
+  action: "quit"
+}
+key_trigger {
+  input: KEY_P
+  action: "play_again"
+}

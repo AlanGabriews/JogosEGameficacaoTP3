@@ -7,6 +7,8 @@ function init(self)
 	self.input = vmath.vector3()
 	self.dir = vmath.vector3(0, 1, 0)
 	self.speed = 100
+
+	self.initial_position = vmath.vector3(1700, 500, 1)
 end
 
 function final(self)                                -- [7]
@@ -44,9 +46,12 @@ function fixed_update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	-- Add message-handling code here
-	-- Learn more: https://defold.com/manuals/message-passing/
-	-- Remove this function if not needed
+	if message_id == hash("tank_hit") then
+		-- O tanque foi atingido
+		print("Tank atingido! Exibindo GUI final.")
+		-- Envia uma mensagem para mostrar o GUI final
+		msg.post("main:/final_gui", "show_gui")
+	end
 end
 
 -- Função para mudar a animação do tanque
@@ -73,6 +78,13 @@ function on_input(self, action_id, action)          -- [14]
 		play_animation(self, hash("tank-right"))
 	elseif action_id == hash("attack_P2") and action.pressed then
 		self.firing = true
+
+	elseif action_id == hash("quit") then
+		print("Tecla Q pressionada - Saindo do jogo...")
+		msg.post("@system:", "exit", {code = 0})
+	elseif action_id == hash("play_again") then
+		print("Tecla P pressionada - Reiniciando o jogo...")
+		go.set_position(self.initial_position)
 	end
 
 	if vmath.length(self.input) > 0 then
