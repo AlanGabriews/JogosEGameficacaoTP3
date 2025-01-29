@@ -1,0 +1,29 @@
+function init(self)
+	-- Inicialização dos botões (caso necessário)
+	gui.set_scale(gui.get_node("PlayAgain"), vmath.vector3(1, 1, 1))
+	gui.set_scale(gui.get_node("Quit"), vmath.vector3(1, 1, 1))
+	gui.set_enabled(gui.get_node("PlayAgain"), false)
+	gui.set_enabled(gui.get_node("Quit"), false)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("show_gui") then
+		-- Mostre os botões do menu
+		gui.set_enabled(gui.get_node("PlayAgain"), true)
+		gui.set_enabled(gui.get_node("Quit"), true)
+	elseif message_id == hash("hide_gui") then
+		-- Oculte os botões do menu
+		gui.set_enabled(gui.get_node("PlayAgain"), false)
+		gui.set_enabled(gui.get_node("Quit"), false)
+	end
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("quit") then
+		print("Tecla Q pressionada - Saindo do jogo...")
+		msg.post("@system:", "exit")
+	elseif action_id == hash("play_again") then
+		print("Tecla Enter pressionada - Reiniciando o jogo...")
+		msg.post("@system:", "reload")
+	end
+end
